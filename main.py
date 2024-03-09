@@ -56,7 +56,7 @@ def UsersRecommend(año: int):
             game = row['title']
             resultado.append({f'Puesto {puesto}: {game}'})
         
-        return resultado
+        return {resultado}
     else:
         return {f'Año no encuentrado!'}
     
@@ -72,7 +72,7 @@ def UsersNotRecommend( año : int ):
             game = row['title']
             resultado.append({f'Puesto {puesto}: {game}'})
         
-        return resultado
+        return {resultado}
     else:
         return {f'Año no encuentrado!'}
         
@@ -89,7 +89,7 @@ def sentiment_analysis( año : int ):
         neutro = filtro[filtro['significado']== 'Neutro']['significado'].count()
         positivo = filtro[filtro['significado']== 'Positivo']['significado'].count()
         return {f'Negativo: {negativo}, Neutral: {neutro}, Positivo: {positivo}'}
-        
+
     
     else: 
         return {f'Año no encuentrado!'}
