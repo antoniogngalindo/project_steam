@@ -1,7 +1,7 @@
-./Datasets/PlayTimeGenre.csv
-./Datasets/UserForGenre.csv
-./Datasets/Recommend_functions.csv
-./Datasets/sentiment_analysis_function.csv
+./PlayTimeGenre.csv
+./UserForGenre.csv
+./Recommend_functions.csv
+./sentiment_analysis_function.csv
 ./Analisis_Sentimientos_reviews.ipynb
 ./EDA_steam_games.ipynb
 ./ETL_steam_games.ipynb

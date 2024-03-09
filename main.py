@@ -5,10 +5,10 @@ import pandas as pd
 app = FastAPI()
 
 
-df_PlayTimeGenre = pd.read_csv('Datasets/PlayTimeGenre.csv', low_memory= False)
-df_UserForGenre = pd.read_csv('Datasets/UserForGenre.csv', low_memory= False)
-df_recommend = pd.read_csv('Datasets/Recommend_functions.csv', low_memory= False)
-df_sentiment_analysis = pd.read_csv('Datasets/sentiment_analysis_function.csv')
+df_PlayTimeGenre = pd.read_csv('PlayTimeGenre.csv', low_memory= False)
+df_UserForGenre = pd.read_csv('UserForGenre.csv', low_memory= False)
+df_recommend = pd.read_csv('Recommend_functions.csv', low_memory= False)
+df_sentiment_analysis = pd.read_csv('sentiment_analysis_function.csv')
 
 
 @app.get("/PlayTimeGenre/{genero}", name='Año con mas horas jugadas para el género ingresado')
