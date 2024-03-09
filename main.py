@@ -11,7 +11,7 @@ df_recommend = pd.read_csv('Recommend_functions.csv', low_memory= False)
 df_sentiment_analysis = pd.read_csv('sentiment_analysis_function.csv')
 
 
-@app.get("/PlayTimeGenre/{genero}", name='Año con mas horas jugadas para el género ingresado')
+@app.get("/Play_Time_Genre/{genero}", name='Año con mas horas jugadas para el género ingresado')
 
 def PlayTimeGenre( genero : str ):
     filtro = df_PlayTimeGenre[df_PlayTimeGenre['most_played_genre']== genero]
@@ -24,7 +24,7 @@ def PlayTimeGenre( genero : str ):
     
 
 
-@app.get("/UserForGenre/{genero}", name='Usuario que acumula más horas jugadas para el género dado y una lista de la acumulación de horas jugadas por año.')
+@app.get("/User_For_Genre/{genero}", name='Usuario que acumula más horas jugadas para el género dado y una lista de la acumulación de horas jugadas por año.')
 
 def UserForGenre(genero: str):
     filtro = df_UserForGenre[df_UserForGenre['most_played_genre'] == genero]
