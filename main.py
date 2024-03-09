@@ -26,7 +26,7 @@ def PlayTimeGenre( genero : str ):
 
 @app.get("/UserForGenre/{genero}", name='Usuario que acumula más horas jugadas para el género dado y una lista de la acumulación de horas jugadas por año.')
 
-def UserForGenre(genero):
+def UserForGenre(genero: str):
     filtro = df_UserForGenre[df_UserForGenre['most_played_genre'] == genero]
     if len(filtro) >= 1:
         user_playtime = filtro.groupby('user_id')['playtime_forever'].sum().reset_index()
