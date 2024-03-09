@@ -85,11 +85,16 @@ def sentiment_analysis( year : int ):
     negativo = 0
     neutro = 0
     positivo = 0
+    sentimentos = {}
     if len(filtro) > 0:
         negativo = filtro[filtro['significado']== 'Negativo']['significado'].count()
         neutro = filtro[filtro['significado']== 'Neutro']['significado'].count()
         positivo = filtro[filtro['significado']== 'Positivo']['significado'].count()
-        return {'Negative': negativo, 'Neutral': neutro, 'Positive':  positivo}
+        sentimentos['Negative'] = negativo
+        sentimentos['Neutral'] = neutro
+        sentimentos['Positive'] = positivo
+
+        return sentimentos
 
     
     else: 
