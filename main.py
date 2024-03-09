@@ -50,11 +50,11 @@ def UsersRecommend(año: int):
     filtro = df_recommend[df_recommend['year'] == año]
     if len(filtro) > 1:
         recomend = filtro[filtro['recommend'] == True]
-        polaridad = recomend.nlargest(3, 'polaridad')
+        polaridad = recomend.nlargest(3, 'polaridad').reset_index(drop= True)
         resultado = {}
-        for puesto, (i, row) in enumerate(polaridad.iterrows(), start=1):
-            game = row['title']
-            resultado[f'Puesto {puesto}'] = game
+        for i, row in polaridad.iterrows():
+            game = "Puesto " + str(i + 1 - polaridad.index[0])
+            resultado[game] = row['title']
         
         return resultado
     else:
@@ -66,11 +66,11 @@ def UsersNotRecommend( año : int ):
     filtro = df_recommend[df_recommend['year'] == año]
     if len(filtro) > 1:
         recomend = filtro[filtro['recommend'] == False]
-        polaridad = recomend.nsmallest(3, 'polaridad')
+        polaridad = recomend.nsmallest(3, 'polaridad').reset_index(drop= True)
         resultado = {}
-        for puesto, (i, row) in enumerate(polaridad.iterrows(), start=1):
-            game = row['title']
-            resultado[f'Puesto {puesto}'] = game
+        for i, row in polaridad.iterrows():
+            game = "Puesto " + str(i + 1 - polaridad.index[0])
+            resultado[game] = row['title']
         
         return resultado
     else:
@@ -88,7 +88,7 @@ def sentiment_analysis( año : int ):
         negativo = filtro[filtro['significado']== 'Negativo']['significado'].count()
         neutro = filtro[filtro['significado']== 'Neutro']['significado'].count()
         positivo = filtro[filtro['significado']== 'Positivo']['significado'].count()
-        return {f'Negative= {negativo}, Neutral= {neutro}, Positive= {positivo}'}
+        return {'Negative': negativo, 'Neutral': neutro, 'Positive':  positivo}
 
     
     else: 
