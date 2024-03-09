@@ -44,10 +44,10 @@ def UserForGenre(genero: str):
     else:
         return {'No sé encontró el Género'}
     
-@app.get("/UsersRecommend/{año}", name='Top 3 de juegos MÁS recomendados por usuarios para el año dado.')
+@app.get("/UsersRecommend/{year}", name='Top 3 de juegos MÁS recomendados por usuarios para el año dado.')
 
-def UsersRecommend(año: int):
-    filtro = df_recommend[df_recommend['year'] == año]
+def UsersRecommend(year: int):
+    filtro = df_recommend[df_recommend['year'] == year]
     if len(filtro) > 1:
         recomend = filtro[filtro['recommend'] == True]
         polaridad = recomend.nlargest(3, 'polaridad').reset_index(drop= True)
@@ -60,10 +60,10 @@ def UsersRecommend(año: int):
     else:
         return {f'Año no encuentrado!'}
     
-@app.get("/UsersNotRecommend/{año}", name='Top 3 de juegos MENOS recomendados por usuarios para el año dado.')
+@app.get("/UsersNotRecommend/{year}", name='Top 3 de juegos MENOS recomendados por usuarios para el año dado.')
 
-def UsersNotRecommend( año : int ):
-    filtro = df_recommend[df_recommend['year'] == año]
+def UsersNotRecommend( year : int ):
+    filtro = df_recommend[df_recommend['year'] == year]
     if len(filtro) > 1:
         recomend = filtro[filtro['recommend'] == False]
         polaridad = recomend.nsmallest(3, 'polaridad').reset_index(drop= True)
@@ -77,10 +77,10 @@ def UsersNotRecommend( año : int ):
         return {f'Año no encuentrado!'}
         
 
-@app.get("/Sentiment_Analysis/{año}", name='Lista con la cantidad de registros de reseñas de usuarios que se encuentren categorizados con un análisis de sentimiento.')
+@app.get("/Sentiment_Analysis/{year}", name='Lista con la cantidad de registros de reseñas de usuarios que se encuentren categorizados con un análisis de sentimiento.')
 
-def sentiment_analysis( año : int ):
-    filtro = df_sentiment_analysis[df_sentiment_analysis['year']== año]
+def sentiment_analysis( year : int ):
+    filtro = df_sentiment_analysis[df_sentiment_analysis['year']== year]
     negativo = 0
     neutro = 0
     positivo = 0
