@@ -19,7 +19,7 @@ def PlayTimeGenre( genero : str ):
         max_playtime = filtro['playtime_forever'].max()
         max_year = filtro.loc[filtro['playtime_forever'] == max_playtime, 'year'].values[0]
         return {'Año de lanzamiento con más horas jugadas para ' + genero: int(max_year) }
-        
+
     else:
         return {'No sé encontró el Género'}
     
@@ -40,7 +40,7 @@ def UserForGenre(genero: str):
                 hora_por_ano = {'Año': int(year), 'Horas': int(playtime)}
                 horas_jugadas.append(hora_por_ano)
 
-        return {'Usuário com mais horas jogadas para' + {genero}: {most_played_user}, 'Horas jogadas': {horas_jugadas}}
+        return {f'Usuário com mais horas jogadas para {genero}: {most_played_user} , Horas jogadas: {horas_jugadas}'}
     else:
         return {'No sé encontró el Género'}
     
@@ -88,7 +88,8 @@ def sentiment_analysis( año : int ):
         negativo = filtro[filtro['significado']== 'Negativo']['significado'].count()
         neutro = filtro[filtro['significado']== 'Neutro']['significado'].count()
         positivo = filtro[filtro['significado']== 'Positivo']['significado'].count()
-        return {'Negativo': negativo, 'Neutral': neutro, 'Positivo': positivo}
+        return {f'Negativo: {negativo}, Neutral: {neutro}, Positivo: {positivo}'}
+        
     
     else: 
         return {f'Año no encuentrado!'}
