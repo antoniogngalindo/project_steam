@@ -51,12 +51,12 @@ def UsersRecommend(año: int):
     if len(filtro) > 1:
         recomend = filtro[filtro['recommend'] == True]
         polaridad = recomend.nlargest(3, 'polaridad')
-        resultado = []
+        resultado = {}
         for puesto, (i, row) in enumerate(polaridad.iterrows(), start=1):
             game = row['title']
-            resultado.append({f'Puesto {puesto}: {game}'})
+            resultado[f'Puesto {puesto}'] = game
         
-        return {resultado}
+        return resultado
     else:
         return {f'Año no encuentrado!'}
     
@@ -67,12 +67,12 @@ def UsersNotRecommend( año : int ):
     if len(filtro) > 1:
         recomend = filtro[filtro['recommend'] == False]
         polaridad = recomend.nsmallest(3, 'polaridad')
-        resultado = []
+        resultado = {}
         for puesto, (i, row) in enumerate(polaridad.iterrows(), start=1):
             game = row['title']
-            resultado.append({f'Puesto {puesto}: {game}'})
+            resultado[f'Puesto {puesto}'] = game
         
-        return {resultado}
+        return resultado
     else:
         return {f'Año no encuentrado!'}
         
@@ -88,7 +88,7 @@ def sentiment_analysis( año : int ):
         negativo = filtro[filtro['significado']== 'Negativo']['significado'].count()
         neutro = filtro[filtro['significado']== 'Neutro']['significado'].count()
         positivo = filtro[filtro['significado']== 'Positivo']['significado'].count()
-        return {f'Negativo: {negativo}, Neutral: {neutro}, Positivo: {positivo}'}
+        return {f'Negative= {negativo}, Neutral= {neutro}, Positive= {positivo}'}
 
     
     else: 
