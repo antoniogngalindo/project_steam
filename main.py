@@ -13,12 +13,13 @@ df_sentiment_analysis = pd.read_csv('sentiment_analysis_function.csv')
 
 @app.get("/Play_Time_Genre/{genero}", name='Año con mas horas jugadas para el género ingresado')
 
-async def PlayTimeGenre( genero : str ):
+def PlayTimeGenre( genero : str ):
     filtro = df_PlayTimeGenre[df_PlayTimeGenre['most_played_genre']== genero]
     if len(filtro)>=1:
         max_playtime = filtro['playtime_forever'].max()
         max_year = filtro.loc[filtro['playtime_forever'] == max_playtime, 'year'].values[0]
-        return {'Año de lanzamiento con más horas jugadas para Género' + int(max_year) : {genero}}
+        return {'Año de lanzamiento con más horas jugadas para ' + genero: int(max_year) }
+        
     else:
         return {'No sé encontró el Género'}
     
