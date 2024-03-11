@@ -82,19 +82,11 @@ def UsersNotRecommend( year : int ):
 
 def sentiment_analysis( year : int ):
     filtro = df_sentiment_analysis[df_sentiment_analysis['year']== year]
-    negativo = 0
-    neutro = 0
-    positivo = 0
-    sentimentos = {}
+    
     if len(filtro) > 0:
-        negativo = filtro[filtro['significado']== 'Negativo']['significado'].count()
-        neutro = filtro[filtro['significado']== 'Neutro']['significado'].count()
-        positivo = filtro[filtro['significado']== 'Positivo']['significado'].count()
-        sentimentos['Negative'] = negativo
-        sentimentos['Neutral'] = neutro
-        sentimentos['Positive'] = positivo
+        sentimientos = filtro[['Negativo', 'Neutro', 'Positivo']]
 
-        return sentimentos
+        return sentimientos.to_dict(orient = 'records')
 
     
     else: 
