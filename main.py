@@ -100,7 +100,6 @@ def recomendacion_juego(id_producto: int):
     
     if id_producto in df_recomendacion_juego['item_id'].values:
         index = df_recomendacion_juego[df_recomendacion_juego['item_id'] == id_producto].index[0]
-        titulo_pesquisado = df_recomendacion_juego.loc[index, 'title']
         similarities = cosine_similarity(df_recomendacion_juego.iloc[:, 1:-1])
         similar_indices = similarities[index].argsort()[::-1][1:6]
         similar_products = df_recomendacion_juego.iloc[similar_indices][['item_id', 'title']]
