@@ -10,7 +10,7 @@ df_PlayTimeGenre = pd.read_csv('PlayTimeGenre.csv', low_memory= False)
 df_UserForGenre = pd.read_csv('UserForGenre.csv', low_memory= False)
 df_recommend = pd.read_csv('Recommend_functions.csv', low_memory= False)
 df_sentiment_analysis = pd.read_csv('sentiment_analysis_function.csv', low_memory= False)
-df_recomendacion_juego = pd.read_csv('recomendacion_juego_function.ipynb', low_memory= False)
+df_recomendacion_juego = pd.read_csv('recomendacion_juego_function.csv', low_memory= False)
 
 
 @app.get("/Play_Time_Genre/{genero}", name='Año con mas horas jugadas para el género ingresado')
