@@ -96,7 +96,7 @@ def sentiment_analysis( year : int ):
 
 @app.get("/Recomendacion_Juego/{id_producto}", name='5 juegos recomendados similares al ID ingresado')
 
-def recomendacion_juego(id_producto):
+def recomendacion_juego(id_producto: int):
     
     if id_producto in df_recomendacion_juego['item_id'].values:
         index = df_recomendacion_juego[df_recomendacion_juego['item_id'] == id_producto].index[0]
