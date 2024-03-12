@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 import uvicorn
 import pandas as pd
+from sklearn.metrics.pairwise import cosine_similarity
 
 app = FastAPI()
 
@@ -9,7 +10,7 @@ df_PlayTimeGenre = pd.read_csv('PlayTimeGenre.csv', low_memory= False)
 df_UserForGenre = pd.read_csv('UserForGenre.csv', low_memory= False)
 df_recommend = pd.read_csv('Recommend_functions.csv', low_memory= False)
 df_sentiment_analysis = pd.read_csv('sentiment_analysis_function.csv', low_memory= False)
-
+df_recomendacion_juego = pd.read_csv('recomenddaion_juego.ipynb', low_memory= False)
 
 
 @app.get("/Play_Time_Genre/{genero}", name='Año con mas horas jugadas para el género ingresado')
@@ -93,3 +94,16 @@ def sentiment_analysis( year : int ):
         return {f'Año no encuentrado!'}
 
 
+@app.get("/Recomendacion_Juego/{genero}", name='5 juegos recomendados similares al ID ingresado')
+
+def recomendacion_juego(id_producto):
+    
+    if id_producto in df_recomendacion_juego['item_id'].values:
+        index = df_recomendacion_juego[df_recomendacion_juego['item_id'] == id_producto].index[0]
+        titulo_pesquisado = df_recomendacion_juego.loc[index, 'title']
+        similarities = cosine_similarity(df_recomendacion_juego.iloc[:, 1:-1])
+        similar_indices = similarities[index].argsort()[::-1][1:6]
+        similar_products = df_recomendacion_juego.iloc[similar_indices][['item_id', 'title']]
+        return similar_products.to_dict(orient='records')
+    else:
+        return 'ID no encontrado'
