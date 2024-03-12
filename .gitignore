@@ -1,5 +1,6 @@
 ./PlayTimeGenre.csv
 ./UserForGenre.csv
+./UserForGenre.parquet
 ./Recommend_functions.csv
 ./sentiment_analysis_function.csv
 ./Analisis_Sentimientos_reviews.ipynb
@@ -14,3 +15,4 @@
 ./recomendacion_juego.ipynb
 ./recomendacion_juego_function.csv
 ./README.md
+./test.ipynb
