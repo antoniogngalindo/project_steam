@@ -94,7 +94,7 @@ def sentiment_analysis( year : int ):
         return {f'Año no encuentrado!'}
 
 
-@app.get("/Recomendacion_Juego/{genero}", name='5 juegos recomendados similares al ID ingresado')
+@app.get("/Recomendacion_Juego/{id_producto}", name='5 juegos recomendados similares al ID ingresado')
 
 def recomendacion_juego(id_producto):
     
