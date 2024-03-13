@@ -14,5 +14,6 @@
 ./Funciones_Recommend.ipynb
 ./recomendacion_juego.ipynb
 ./recomendacion_juego_function.csv
+./recomendacion_juego_function.parquet
 ./README.md
 ./test.ipynb
