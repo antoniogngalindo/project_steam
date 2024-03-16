@@ -4,10 +4,10 @@ year,most_played_genre,playtime_forever
 1986.0,Adventure,5100
 1987.0,Simulation,0
 1988.0,Action,16243
-1988.0,Adventure,13998
+1988.0,Adventure,6320
 1988.0,Simulation,1
 1989.0,Action,607
-1989.0,Adventure,5084
+1989.0,Adventure,1204
 1990.0,Action,69
 1990.0,Adventure,1125
 1990.0,Simulation,878
@@ -18,256 +18,247 @@ year,most_played_genre,playtime_forever
 1992.0,Action,1925
 1992.0,Adventure,2522
 1992.0,Simulation,11
-1993.0,Action,12199
-1993.0,Adventure,13899
-1993.0,Strategy,187144
-1994.0,Action,40603
-1994.0,Adventure,14391
+1993.0,Action,10387
+1993.0,Adventure,3857
+1993.0,Strategy,41571
+1994.0,Action,34584
+1994.0,Adventure,10869
 1994.0,Simulation,4127
 1994.0,Strategy,46
-1995.0,Action,64605
+1995.0,Action,50339
 1995.0,Adventure,1544
 1995.0,Casual,3177
 1995.0,Simulation,980
-1995.0,Strategy,4430
-1996.0,Action,51726
-1996.0,Adventure,58069
+1995.0,Strategy,2997
+1996.0,Action,37474
+1996.0,Adventure,45099
 1996.0,Casual,570
-1996.0,Classic,3368
-1996.0,RPG,7170
+1996.0,Classic,1260
+1996.0,RPG,3102
 1996.0,Racing,1202
 1996.0,Strategy,1398
-1997.0,Action,271013
-1997.0,Adventure,19153
+1997.0,Action,193744
+1997.0,Adventure,15709
 1997.0,Casual,2118
-1997.0,RPG,1389
-1997.0,Strategy,132761
-1998.0,Action,2809535
+1997.0,RPG,493
+1997.0,Strategy,25875
+1998.0,Action,1054021
 1998.0,Adventure,8605
-1998.0,Casual,4791
+1998.0,Casual,1880
 1998.0,Indie,41
 1998.0,Racing,5
-1998.0,Simulation,4361
-1998.0,Strategy,25162
-1999.0,Action,2721215
+1998.0,Simulation,2378
+1998.0,Strategy,4592
+1999.0,Action,1114030
 1999.0,Adventure,1159
 1999.0,Casual,222
-1999.0,RPG,41777
-1999.0,Simulation,14683
-1999.0,Strategy,310420
-2000.0,Action,18571183
-2000.0,Adventure,50273
-2000.0,Based On A Novel,0
+1999.0,RPG,32509
+1999.0,Simulation,9150
+1999.0,Strategy,118473
+2000.0,Action,997048
+2000.0,Adventure,3555
 2000.0,Casual,15
 2000.0,Indie,2274
 2000.0,RPG,1245
-2000.0,Simulation,11341
-2000.0,Strategy,5039
-2001.0,Action,1255120
-2001.0,Adventure,23530
+2000.0,Simulation,1838
+2000.0,Strategy,2603
+2001.0,Action,690599
+2001.0,Adventure,6606
 2001.0,Casual,675
-2001.0,Indie,25175
-2001.0,RPG,18290
-2001.0,Simulation,267620
-2001.0,Strategy,82238
-2002.0,Action,725264
-2002.0,Adventure,133350
-2002.0,Casual,3635
-2002.0,RPG,191620
-2002.0,Simulation,187789
-2002.0,Strategy,64206
-2003.0,Action,9906989
-2003.0,Adventure,17560
+2001.0,Indie,9428
+2001.0,RPG,3868
+2001.0,Simulation,105505
+2001.0,Strategy,59486
+2002.0,Action,357677
+2002.0,Adventure,31935
+2002.0,Casual,2544
+2002.0,RPG,78925
+2002.0,Simulation,61816
+2002.0,Strategy,19290
+2003.0,Action,1614183
+2003.0,Adventure,8731
 2003.0,Casual,1447
-2003.0,Indie,7057
-2003.0,RPG,159415
-2003.0,Simulation,5346
-2003.0,Strategy,103345
-2004.0,Action,130469318
-2004.0,Adventure,6053
-2004.0,Casual,13190
-2004.0,Indie,12393
-2004.0,RPG,19535
+2003.0,Indie,1970
+2003.0,RPG,132756
+2003.0,Simulation,1047
+2003.0,Strategy,34300
+2004.0,Action,8057570
+2004.0,Adventure,4499
+2004.0,Casual,5263
+2004.0,Indie,10046
+2004.0,RPG,13430
 2004.0,Racing,3477
-2004.0,Simulation,86403
-2004.0,Strategy,488839
-2005.0,Action,6015794
-2005.0,Adventure,22958
-2005.0,Casual,38273
-2005.0,Classic,7310
+2004.0,Simulation,15107
+2004.0,Strategy,110295
+2005.0,Action,1977713
+2005.0,Adventure,15599
+2005.0,Casual,9474
 2005.0,Documentary,130
-2005.0,Indie,72362
-2005.0,RPG,432896
-2005.0,Racing,188466
+2005.0,Indie,45763
+2005.0,RPG,178022
+2005.0,Racing,99490
 2005.0,Simulation,240
-2005.0,Strategy,172857
-2005.0,Web Publishing,93847
-2006.0,Action,6857161
-2006.0,Adventure,41810
-2006.0,Casual,135081
-2006.0,Indie,448808811
+2005.0,Strategy,52615
+2005.0,Web Publishing,12015
+2006.0,Action,3227205
+2006.0,Adventure,33417
+2006.0,Casual,50372
+2006.0,Indie,4248028
 2006.0,Photo Editing,173
-2006.0,RPG,2482
-2006.0,Racing,15090
-2006.0,Simulation,1672767
-2006.0,Strategy,523371
-2007.0,Action,11309542
-2007.0,Adventure,9481
-2007.0,Audio Production,11061
-2007.0,Casual,565577
+2006.0,RPG,1387
+2006.0,Racing,12024
+2006.0,Simulation,225857
+2006.0,Strategy,132586
+2007.0,Action,5900699
+2007.0,Adventure,8517
+2007.0,Casual,177338
 2007.0,Horror,1
-2007.0,Indie,113324
-2007.0,RPG,94034
-2007.0,Racing,530903
-2007.0,Simulation,55575
-2007.0,Strategy,395077
-2008.0,Action,27890827
-2008.0,Adventure,80478
-2008.0,Animation &amp; Modeling,2059
-2008.0,Casual,269293
+2007.0,Indie,53781
+2007.0,RPG,15046
+2007.0,Racing,92997
+2007.0,Simulation,32159
+2007.0,Strategy,121287
+2008.0,Action,3274815
+2008.0,Adventure,47254
+2008.0,Casual,102792
 2008.0,Drama,1
-2008.0,Free to Play,103650
-2008.0,Indie,1845088
-2008.0,RPG,2429978
-2008.0,Racing,1348343
-2008.0,Simulation,29416
-2008.0,Sports,1779
-2008.0,Strategy,180885
-2009.0,Action,154152980
-2009.0,Adventure,391465
-2009.0,Casual,685489
-2009.0,Free to Play,2062319
-2009.0,Indie,637344
-2009.0,RPG,5475180
-2009.0,Racing,2217078
-2009.0,Simulation,6949141
-2009.0,Strategy,3057934
-2010.0,Action,105700067
-2010.0,Adventure,248365
-2010.0,Casual,2691776
+2008.0,Free to Play,26882
+2008.0,Indie,570171
+2008.0,RPG,477406
+2008.0,Racing,421879
+2008.0,Simulation,7231
+2008.0,Sports,391
+2008.0,Strategy,50656
+2009.0,Action,12677184
+2009.0,Adventure,291726
+2009.0,Casual,481200
+2009.0,Free to Play,152429
+2009.0,Indie,248638
+2009.0,RPG,926060
+2009.0,Racing,810919
+2009.0,Simulation,1010049
+2009.0,Strategy,363167
+2010.0,Action,9722101
+2010.0,Adventure,157810
+2010.0,Casual,1706157
 2010.0,Education,9
-2010.0,Free to Play,7662039
-2010.0,Indie,3437907
-2010.0,RPG,8277561
-2010.0,Racing,701010
-2010.0,Simulation,925942
-2010.0,Strategy,7314739
-2011.0,1990's,173548
-2011.0,Action,303959758
-2011.0,Adventure,4933443
+2010.0,Free to Play,312100
+2010.0,Indie,1597616
+2010.0,RPG,640848
+2010.0,Racing,129616
+2010.0,Simulation,210510
+2010.0,Strategy,706991
+2011.0,Action,26652398
+2011.0,Adventure,2309936
 2011.0,Anime,300
-2011.0,Casual,3455878
-2011.0,Documentary,47347
-2011.0,Indie,1231877
-2011.0,RPG,5025780
-2011.0,Racing,625216
-2011.0,Simulation,3208627
-2011.0,Sports,32156
-2011.0,Strategy,19651747
-2012.0,1990's,58466
-2012.0,Action,1021522835
-2012.0,Adventure,11004455
-2012.0,Animation &amp; Modeling,6544
-2012.0,Casual,7214620
-2012.0,Comedy,841
-2012.0,Design &amp; Illustration,1947406
-2012.0,Free to Play,8643166
-2012.0,Indie,14064245
-2012.0,Photo Editing,2678
-2012.0,RPG,10781184
-2012.0,Racing,76509
-2012.0,Simulation,51345
-2012.0,Sports,894678
-2012.0,Strategy,19044693
-2012.0,Utilities,10338
-2013.0,Action,398117643
-2013.0,Adventure,8175937
-2013.0,Animation &amp; Modeling,234707
-2013.0,Audio Production,15599
-2013.0,Casual,7244795
+2011.0,Casual,1019125
+2011.0,Documentary,40194
+2011.0,Indie,664273
+2011.0,RPG,1205148
+2011.0,Racing,180008
+2011.0,Simulation,671052
+2011.0,Sports,23549
+2011.0,Strategy,1173734
+2012.0,Action,32538502
+2012.0,Adventure,4886646
+2012.0,Animation &amp; Modeling,734
+2012.0,Casual,812725
+2012.0,Comedy,727
+2012.0,Design &amp; Illustration,142500
+2012.0,Free to Play,409295
+2012.0,Indie,2922305
+2012.0,Photo Editing,1124
+2012.0,RPG,439407
+2012.0,Racing,40114
+2012.0,Simulation,17776
+2012.0,Sports,85124
+2012.0,Strategy,2065294
+2012.0,Utilities,5647
+2013.0,Action,35048495
+2013.0,Adventure,5172039
+2013.0,Animation &amp; Modeling,56658
+2013.0,Audio Production,6314
+2013.0,Casual,2949183
 2013.0,Comedy,1
 2013.0,Design &amp; Illustration,1539
-2013.0,Early Access,2407891
+2013.0,Early Access,477527
 2013.0,Education,13
-2013.0,Free to Play,9686057
-2013.0,Indie,13598950
-2013.0,RPG,3329612
-2013.0,Racing,2099805
-2013.0,Simulation,15803747
-2013.0,Strategy,11944011
-2013.0,Utilities,86301
-2014.0,Action,133175447
-2014.0,Adventure,12773449
-2014.0,Animation &amp; Modeling,40083
+2013.0,Free to Play,761396
+2013.0,Indie,3873946
+2013.0,RPG,398769
+2013.0,Racing,579425
+2013.0,Simulation,615853
+2013.0,Strategy,771394
+2013.0,Utilities,4280
+2014.0,Action,28544803
+2014.0,Adventure,4668021
+2014.0,Animation &amp; Modeling,12246
 2014.0,Anime,326
-2014.0,Audio Production,466211
-2014.0,Casual,7293367
+2014.0,Audio Production,16559
+2014.0,Casual,3515724
 2014.0,Comedy,78
-2014.0,Design &amp; Illustration,65882
-2014.0,Documentary,457137
-2014.0,Drama,150
-2014.0,Early Access,436491
-2014.0,Free to Play,2500234
-2014.0,Indie,13637080
-2014.0,RPG,2850510
-2014.0,Racing,1008101
-2014.0,Simulation,3236192
-2014.0,Sports,137903
-2014.0,Strategy,2578402
-2014.0,Utilities,2150007
-2015.0,1980s,24057
-2015.0,Action,170264855
-2015.0,Adventure,41497579
+2014.0,Design &amp; Illustration,21878
+2014.0,Documentary,239388
+2014.0,Drama,61
+2014.0,Early Access,37367
+2014.0,Free to Play,855479
+2014.0,Indie,3833888
+2014.0,RPG,802290
+2014.0,Racing,276867
+2014.0,Simulation,535957
+2014.0,Sports,33711
+2014.0,Strategy,223676
+2014.0,Utilities,85286
+2015.0,Action,16901078
+2015.0,Adventure,3644015
 2015.0,Animation & Modeling,237
-2015.0,Animation &amp; Modeling,199103
+2015.0,Animation &amp; Modeling,112766
 2015.0,Anime,591
-2015.0,Audio Production,4709
-2015.0,Casual,19381002
-2015.0,Comedy,2389
+2015.0,Audio Production,1717
+2015.0,Casual,2514033
 2015.0,Comic Book,5831
-2015.0,Dark,223
-2015.0,Design &amp; Illustration,348581
-2015.0,Documentary,15944
-2015.0,Drama,1673
-2015.0,Early Access,4792675
-2015.0,Free to Play,8356020
-2015.0,Indie,34603482
-2015.0,RPG,47973925
-2015.0,Racing,232326
-2015.0,Simulation,8543882
-2015.0,Sports,2708363
-2015.0,Strategy,5229083
-2015.0,Utilities,496986
+2015.0,Design &amp; Illustration,14807
+2015.0,Documentary,13357
+2015.0,Drama,390
+2015.0,Early Access,1387225
+2015.0,Free to Play,1558736
+2015.0,Indie,5491505
+2015.0,RPG,977065
+2015.0,Racing,28140
+2015.0,Simulation,1153313
+2015.0,Sports,162827
+2015.0,Strategy,550227
+2015.0,Utilities,45541
 2015.0,Web Publishing,186
-2016.0,Action,63010704
-2016.0,Adventure,14568062
-2016.0,Animation &amp; Modeling,113083
-2016.0,Anime,2061
-2016.0,Atmospheric,195
+2016.0,Action,6368916
+2016.0,Adventure,3737791
+2016.0,Animation &amp; Modeling,14199
+2016.0,Anime,1285
 2016.0,Audio Production,273
-2016.0,Casual,8043956
-2016.0,Design &amp; Illustration,1208
+2016.0,Casual,1929453
+2016.0,Design &amp; Illustration,502
 2016.0,Documentary,419
-2016.0,Early Access,1590109
-2016.0,Free to Play,3659437
-2016.0,Indie,10624378
-2016.0,RPG,878499
-2016.0,Racing,152735
-2016.0,Simulation,5837202
-2016.0,Sports,28529
-2016.0,Strategy,690476
-2016.0,Utilities,77584
+2016.0,Early Access,226952
+2016.0,Education,390
+2016.0,Free to Play,598991
+2016.0,Indie,1905207
+2016.0,RPG,98063
+2016.0,Racing,28162
+2016.0,Simulation,308234
+2016.0,Sports,15984
+2016.0,Strategy,158705
+2016.0,Utilities,23812
 2016.0,Video Production,1525
-2017.0,Action,126619825
-2017.0,Adventure,1252050
-2017.0,Casual,30255
+2017.0,Action,3070096
+2017.0,Adventure,531297
+2017.0,Casual,21214
 2017.0,Design &amp; Illustration,21
 2017.0,Early Access,118
-2017.0,Education,9713
-2017.0,Free to Play,95271
-2017.0,Indie,895592
-2017.0,Movie,519913
-2017.0,Simulation,71147
-2017.0,Strategy,32273
-2018.0,Action,2224
+2017.0,Education,4965
+2017.0,Free to Play,32003
+2017.0,Indie,292567
+2017.0,Movie,286742
+2017.0,Simulation,39131
+2017.0,Strategy,14387
+2018.0,Action,2203
 2018.0,Early Access,3904

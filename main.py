@@ -3,6 +3,7 @@ import uvicorn
 import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 import pyarrow
+import joblib
 
 app = FastAPI()
 
@@ -12,7 +13,7 @@ df_UserForGenre = pd.read_parquet('UserForGenre.parquet')
 df_recommend = pd.read_csv('Recommend_functions.csv', low_memory= False)
 df_sentiment_analysis = pd.read_csv('sentiment_analysis_function.csv', low_memory= False)
 df_recomendacion_juego = pd.read_parquet('recomendacion_juego_function.parquet')
-
+similitud = joblib.load('similarities.pkl')
 
 @app.get("/Play_Time_Genre/{genero}", name='Año con mas horas jugadas para el género ingresado')
 
@@ -101,7 +102,7 @@ def recomendacion_juego(id_producto: int):
     
     if id_producto in df_recomendacion_juego['item_id'].values:
         index = df_recomendacion_juego[df_recomendacion_juego['item_id'] == id_producto].index[0]
-        similarities = cosine_similarity(df_recomendacion_juego.iloc[:, 1:-1])
+        similarities = similitud
         similar_indices = similarities[index].argsort()[::-1][1:6]
         similar_products = df_recomendacion_juego.iloc[similar_indices][['item_id', 'title']]
         return similar_products.to_dict(orient='records')
