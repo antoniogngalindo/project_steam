@@ -12,8 +12,8 @@
 ./Funcion_UserForGenre.ipynb
 ./Funcion_sentiment_analysis.ipynb
 ./Funciones_Recommend.ipynb
-./recomendacion_juego.ipynb
-./recomendacion_juego_function.csv
+./Funcion_ML_recomendacion_juego.ipynb
 ./recomendacion_juego_function.parquet
+./similarities.pkl
 ./README.md
 ./test.ipynb
