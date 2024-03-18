@@ -55,3 +55,4 @@ Para hacer esto, podemos utilizar la función cosine_similarity de scikit-learn.
 
 ### VIDEO:
 
+https://drive.google.com/file/d/1CS8GckJox6m1xIaiPgeNaVHLUPRK4yFo/view?usp=sharing
